@@ -1467,7 +1467,7 @@ h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,
 	border-top-color: rgba(0,0,0,0.1);
 }
 .navbar .dropdown-menu {
-	left: 50%;
+	left: 27%;
 	margin-left: -80px;
 }
 .navbar .dropdown-menu:before,
