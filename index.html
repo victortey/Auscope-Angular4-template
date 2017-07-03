@@ -33,7 +33,7 @@
 				<div class="navbar-header">
 					<a href="index.html" class="navbar-brand">
 					    <img src="assets/img/AuScope-logo-220.jpg" class="navbar-logo"></img>
-					    <b>Discovery</b> Portal
+					    <span><b>Discovery</b> Portal</span>
 					</a>
 					<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
 						<span class="icon-bar"></span>
@@ -45,7 +45,7 @@
 				<div class="navbar-xs-justified">
 					<ul class="nav navbar-nav navbar-right">
 						
-						<li class="dropdown p-r-25">
+						<li class="dropdown p-r-10">
 							<a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle navbar-icon with-label">
 								<i class="ti-bell"></i>
 							</a>
@@ -57,9 +57,9 @@
 											<i class="ti-apple"></i>
 										</div>
 										<div class="notification-info">
-											<h4 class="notification-title">App Store <span class="notification-time">Just now</span></h4>
+											<h4 class="notification-title">Nagios <span class="notification-time">Just now</span></h4>
 											<p class="notification-desc">
-												Your iOS application has been approved
+												GSWA Service unreachable
 											</p>
 										</div>
 									</a>
@@ -70,9 +70,9 @@
 											<i class="ti-android"></i>
 										</div>
 										<div class="notification-info">
-											<h4 class="notification-title">Google Play <span class="notification-time">5 min ago</span></h4>
+											<h4 class="notification-title">Twitter <span class="notification-time">5 min ago</span></h4>
 											<p class="notification-desc">
-												Your android application has been approved
+												Auscope portal 4.4.0 released
 											</p>
 										</div>
 									</a>
@@ -83,9 +83,9 @@
 											<i class="ti-github"></i>
 										</div>
 										<div class="notification-info">
-											<h4 class="notification-title">Github  <span class="notification-time">12 min ago</span></h4>
+											<h4 class="notification-title">Nagios  <span class="notification-time">12 min ago</span></h4>
 											<p class="notification-desc">
-												Error with notifications from Private Repos
+												Cannot reach catalogue, using cached result
 											</p>
 										</div>
 									</a>
@@ -97,38 +97,64 @@
 											<i class="ti-email"></i>
 										</div>
 										<div class="notification-info">
-											<h4 class="notification-title">Gmail  <span class="notification-time">12:50pm</span></h4>
+											<h4 class="notification-title">Nagios  <span class="notification-time">12:50pm</span></h4>
 											<p class="notification-desc">
-												You have 2 unread email
+												GSNSW cannot be reached
 											</p>
 										</div>
 									</a>
 								</li>
 								<li class="notification">
 									<a href="#">
-										<div class="notification-icon">
-											<img src="assets/img/user-2.jpg" alt="" />
+										<div class="notification-icon bg-success">
+											<i class="ti-android"></i>
 										</div>
 										<div class="notification-info">
-											<h4 class="notification-title">Corey  <span class="notification-time">10:20am</span></h4>
+											<h4 class="notification-title">Twitter  <span class="notification-time">10:20am</span></h4>
 											<p class="notification-desc">
-												There's so much room for activities!
+												Auscope 15 year anniversary 
 											</p>
 										</div>
 									</a>
 								</li>
-								<li class="notification">
-									<a href="#">
-										<div class="notification-icon bg-gradient-aqua">
-											<i class="ti-twitter"></i>
+							</ul>
+						</li>						
+						<li class="dropdown p-r-10">
+							<a href="javascript:;" data-toggle="dropdown" class="navbar-icon">
+								<i class="ti-settings"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-md no-padding" data-dropdown-close="false">
+								<li class="dropdown-header">Sidebar Settings</li>
+								<li class="setting">
+									<div class="setting-icon bg-inverse"><i class="ti-wand"></i></div>
+									<div class="setting-info">
+										<div class="switcher">
+											<input type="checkbox" name="setting_sidebar_inverse" id="setting_sidebar_inverse" checked />
+											<label for="setting_sidebar_inverse"></label>
 										</div>
-										<div class="notification-info">
-											<h4 class="notification-title">Twitter  <span class="notification-time">12:50pm</span></h4>
-											<p class="notification-desc">
-												@sergiolucas: Most rain in the last two days: 85mm Gabo Island (Mar
-											</p>
+										Sidebar Inverse
+									</div>
+								</li>
+								<li class="setting">
+									<div class="setting-icon bg-inverse"><i class="ti-layout-accordion-list"></i></div>
+									<div class="setting-info">
+										<div class="switcher">
+											<input type="checkbox" name="setting_sidebar_minified" id="setting_sidebar_minified" />
+											<label for="setting_sidebar_minified"></label>
 										</div>
-									</a>
+										Sidebar Minified
+									</div>
+								</li>
+								<li class="dropdown-header">Header Settings</li>
+								<li class="setting">
+									<div class="setting-icon bg-inverse"><i class="ti-spray"></i></div>
+									<div class="setting-info">
+										<div class="switcher">
+											<input type="checkbox" name="setting_header_inverse" id="setting_header_inverse" checked />
+											<label for="setting_header_inverse"></label>
+										</div>
+										Header Inverse
+									</div>
 								</li>
 								
 							</ul>
@@ -163,188 +189,82 @@
 			<div data-scrollbar="true" data-height="100%">
 				<!-- BEGIN nav -->
 				<ul class="nav">
-					<li class="nav-header">Navigation</li>
+					<li class="nav-header">Menu</li>
 					<li><a href="index.html"><i class="ti-home"></i><span>Home</span></a></li>
-					<li class="has-sub">
-						<a href="javascript:;">
-						    <span class="caret caret-right pull-right"></span>
-							<i class="ti-email"></i> 
-							<span>Email <span class="notification">20+</span></span>
-						</a>
-						<ul class="sub-menu">
-						    <li><a href="email_inbox.html">Inbox</a></li>
-						    <li><a href="email_compose.html">Compose</a></li>
-						    <li><a href="email_detail.html">Detail</a></li>
-						</ul>
-					</li>
+					<li><a href="index.html"><i class="ti-email"></i><span>Contact us</span></a></li>
 					<li class="nav-divider"></li>
-					<li class="nav-header">Components</li>
-					<li><a href="widgets.html"><i class="ti-shortcode"></i><span>Widgets</span></a></li>
-					<li class="has-sub">
-						<a href="javascript:;">
-						    <b class="caret caret-right pull-right"></b>
-						    <i class="ti-heart"></i>
-						    <span>UI Kits</span> 
-						</a>
-						<ul class="sub-menu">
-							<li><a href="ui_bootstrap.html">Bootstrap</a></li>
-							<li><a href="ui_buttons.html">Buttons</a></li>
-							<li><a href="ui_typography.html">Typography</a></li>
-							<li><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
-							<li><a href="ui_modal_notification.html">Modal & Notification</a></li>
-							<li><a href="ui_panels.html">Panels</a></li>
-							<li><a href="ui_icons.html">Icons</a></li>
-						</ul>
-					</li>
-					<li class="has-sub">
-						<a href="javascript:;">
-						    <b class="caret caret-right pull-right"></b>
-						    <i class="ti-notepad"></i>
-						    <span>Forms</span> 
-						</a>
-						<ul class="sub-menu">
-							<li><a href="form_elements.html">Form Elements</a></li>
-							<li><a href="form_plugins.html">Form Plugins</a></li>
-							<li><a href="form_wizards.html">Wizards</a></li>
-							<li><a href="form_jquery_file_upload.html">File Upload</a></li>
-							<li><a href="form_summernote.html">Summernote</a></li>
-						</ul>
-					</li>
-					<li class="has-sub">
-						<a href="javascript:;">
-						    <b class="caret caret-right pull-right"></b>
-						    <i class="ti-layout-grid2"></i>
-						    <span>Tables</span>
-						</a>
-						<ul class="sub-menu">
-							<li><a href="table_basic.html">Basic Tables</a></li>
-							<li><a href="table_data.html">DataTables</a></li>
-						</ul>
-					</li>
-					<li><a href="chart.html"><i class="ti-bar-chart"></i><span>Chart</span></a></li>
-					<li class="has-sub active">
-					    <a href="javascript:;">
-						    <b class="caret caret-right pull-right"></b>
-					        <i class="ti-map-alt"></i>
-					        <span>Map</span>
-					    </a>
-						<ul class="sub-menu">
-							<li><a href="map_vector.html">Vector Map</a></li>
-							<li class="active"><a href="map_google.html">Google Map</a></li>
-						</ul>
-					</li>
-					<li class="has-sub">
-						<a href="javascript:;">
-						    <b class="caret caret-right pull-right"></b>
-						    <i class="ti-layout-sidebar-left"></i>
-						    <span>Layout</span>
-						</a>
-						<ul class="sub-menu">
-							<li><a href="layout_starter.html">Starter Page</a></li>
-							<li><a href="layout_fixed_footer.html">Fixed Footer</a></li>
-							<li><a href="layout_full_width.html">Full Width</a></li>
-							<li><a href="layout_boxed_layout.html">Boxed Layout</a></li>
-							<li><a href="layout_full_height.html">Full Height</a></li>
-						</ul>
-					</li>
-					<li class="has-sub">
-						<a href="javascript:;">
-						    <b class="caret caret-right pull-right"></b>
-						    <i class="ti-gift"></i>
-						    <span>Pages</span>
-						</a>
-						<ul class="sub-menu">
-					        <li><a href="page_gallery.html">Gallery</a></li>
-						    <li><a href="page_coming_soon.html">Coming Soon Page</a></li>
-							<li><a href="page_search_results.html">Search Results</a></li>
-							<li><a href="page_404_error.html">404 Error Page</a></li>
-							<li><a href="page_login.html">Login</a></li>
-					        <li><a href="page_register.html">Register</a></li>
-						</ul>
-					</li>
-					<li class="nav-divider"></li>
-					<li class="nav-header">Users</li>
-					<li><a href="profile.html"><i class="ti-user"></i><span>Profile</span></a></li>
-					<li><a href="calendar.html"><i class="ti-calendar"></i> <span>Calendar</span></a></li>
-					<li><a href="settings.html"><i class="ti-settings"></i><span>Settings</span></a></li>
-					<li><a href="helper.html"><i class="ti-help-alt"></i><span>Helper</span></a></li>
+					<li class="nav-header">Layer Selection</li>
 					<li class="has-sub">
 						<a href="javascript:;">
 						    <b class="caret caret-right pull-right"></b>
 						    <i class="ti-align-left"></i> 
-						    <span>Menu Level</span>
+						    <span>Layer</span>
 						</a>
 						<ul class="sub-menu">
 							<li class="has-sub">
 								<a href="javascript:;">
 						            <b class="caret caret-right pull-right"></b>
-						            Menu 1.1
+						            Northern Yilgarn Hydrogeochemistry
 						        </a>
-								<ul class="sub-menu">
-									<li class="has-sub">
-										<a href="javascript:;">
-										    <b class="caret caret-right pull-right"></b>
-										    Menu 2.1
-										</a>
-										<ul class="sub-menu">
-											<li><a href="javascript:;">Menu 3.1</a></li>
-											<li><a href="javascript:;">Menu 3.2</a></li>
-										</ul>
-									</li>
-									<li><a href="javascript:;">Menu 2.2</a></li>
-									<li><a href="javascript:;">Menu 2.3</a></li>
+								<ul class="sub-menu">									
+									<li><a href="javascript:;">Hydrogeochemistry</a></li>									
 								</ul>
 							</li>
-							<li><a href="javascript:;">Menu 1.2</a></li>
-							<li><a href="javascript:;">Menu 1.3</a></li>
+							<li class="has-sub">
+								<a href="javascript:;">
+						            <b class="caret caret-right pull-right"></b>
+						            Earth Resources
+						        </a>
+								<ul class="sub-menu">									
+									<li><a href="javascript:;">Earth Resource Mine</a></li>
+									<li><a href="javascript:;">Earth Resource Mineral Occurrence</a></li>
+									<li><a href="javascript:;">Earth Resource Mining Activity</a></li>
+									<li><a href="javascript:;">Mineral Occurence View</a></li>
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;">
+						            <b class="caret caret-right pull-right"></b>
+						              Tenements
+						        </a>
+								<ul class="sub-menu">									
+									<li><a href="javascript:;">Mineral Tenements</a></li>									
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;">
+						            <b class="caret caret-right pull-right"></b>
+						            Northern Yilgarn Hydrogeochemistry
+						        </a>
+								<ul class="sub-menu">									
+									<li><a href="javascript:;">Hydrogeochemistry</a></li>									
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;">
+						            <b class="caret caret-right pull-right"></b>
+						            Earth Resources
+						        </a>
+								<ul class="sub-menu">									
+									<li><a href="javascript:;">Earth Resource Mine</a></li>
+									<li><a href="javascript:;">Earth Resource Mineral Occurrence</a></li>
+									<li><a href="javascript:;">Earth Resource Mining Activity</a></li>
+									<li><a href="javascript:;">Mineral Occurence View</a></li>
+								</ul>
+							</li>
+							<li class="has-sub">
+								<a href="javascript:;">
+						            <b class="caret caret-right pull-right"></b>
+						              Tenements
+						        </a>
+								<ul class="sub-menu">									
+									<li><a href="javascript:;">Mineral Tenements</a></li>									
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-divider"></li>
-					<li class="nav-header">Projects</li>
-					<li class="nav-project">
-						<a href="#">
-							<div class="project-icon">
-								<i class="ti-mobile"></i>
-							</div>	
-							<div class="project-info">
-								<span class="pull-right project-percentage">70%</span>
-								<h4 class="project-title">Mobile App Dev</h4>
-								<div class="progress progress-xs">
-									<div class="progress-bar bg-gradient-blue-purple" style="width: 70%;" role="progressbar"></div>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="nav-project">
-						<a href="#">
-							<div class="project-icon">
-								<i class="ti-headphone"></i>
-							</div>	
-							<div class="project-info">
-								<span class="pull-right project-percentage">40%</span>
-								<h4 class="project-title">New Audio Project</h4>
-								<div class="progress progress-xs">
-									<div class="progress-bar  bg-gradient-blue-purple" style="width: 40%;" role="progressbar"></div>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="nav-project">
-						<a href="#">
-							<div class="project-icon">
-								<i class="ti-github"></i>
-							</div>	
-							<div class="project-info">
-								<span class="pull-right project-percentage">50%</span>
-								<h4 class="project-title">Repository Settings</h4>
-								<div class="progress progress-xs">
-									<div class="progress-bar bg-gradient-blue-purple" style="width: 50%;" role="progressbar"></div>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="nav-divider"></li>
-					<li class="nav-copyright">&copy; 2017 seanTheme All Right Reserved</li>
+					<li class="nav-copyright">Auscope 4.4.0 <div><b>Released</b> 30th June 2017</div></li>
 				</ul>
 				<!-- END nav -->
 			</div>
