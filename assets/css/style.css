@@ -8206,3 +8206,11 @@ a.widget.widget-stats {
 	display: table;
 	clear: both;
 }
+
+
+
+
+.layer-panel{
+	left:-100px;
+	width:320px;
+}

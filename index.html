@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>Infinite Admin | Vector Map</title>
+	<title>Auscope Discovery</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -16,10 +16,12 @@
 	<link href="assets/plugins/icon/themify-icons/themify-icons.css" rel="stylesheet" />
 	<link href="assets/css/animate.min.css" rel="stylesheet" />
 	<link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/auscope-style.css" rel="stylesheet" />
 	<!-- ================== END BASE CSS STYLE ================== -->
 	
 	<!-- ================== BEGIN BASE JS ================== -->
 	<script src="assets/plugins/loader/pace/pace.min.js"></script>
+	<script src="https://use.fontawesome.com/9f193e7fa1.js"></script>
 	<!-- ================== END BASE JS ================== -->
 </head>
 <body>
@@ -217,7 +219,38 @@
 						            Earth Resources
 						        </a>
 								<ul class="sub-menu">									
-									<li><a href="javascript:;">Earth Resource Mine</a></li>
+									<li class="has-sub">
+										<a href="javascript:;">Earth Resource Mine</a>
+										<div class="sub-menu">
+											 <div class="panel panel-inverse panel-info panel-with-tabs layer-panel">
+												<!-- BEGIN panel-heading -->
+												<div class="panel-heading">
+													<ul id="panel-tab" class="nav nav-tabs pull-right">
+														<li class="active"><a href="#panel-tab-home" data-toggle="tab"><i class="fa fa-filter"></i> <span class="hidden-xs">Filter</span></a></li>
+														<li><a href="#panel-tab-profile" data-toggle="tab"><i class="fa fa-info-circle"></i> <span class="hidden-xs">Info</span></a></li>
+													</ul>
+													<h4 class="panel-title"> <i class="ti-more"></i> </h4>
+												</div>
+												<!-- END panel-heading -->
+												<!-- BEGIN tab-content -->
+												<div id="panel-tab-content" class="tab-content">
+													<!-- BEGIN tab-pane -->
+													<div class="tab-pane fade in active" id="panel-tab-home">
+														<h3><span class="text-primary">Panel</span> Tabs</h3>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed enim arcu. Ut posuere in ligula quis ultricies. In in justo turpis. Donec ut dui at massa gravida interdum nec vitae justo. Quisque ullamcorper vehicula dictum. Nullam hendrerit interdum eleifend. Aenean luctus sed arcu laoreet scelerisque. Vivamus non ullamcorper mauris, id sagittis lorem. Proin tincidunt mauris et dolor mattis imperdiet. Sed facilisis mattis diam elementum adipiscing. Raw denim you probably haven't heard of them jean shorts Austin. </p>
+													</div>
+													<!-- END tab-pane -->
+													<!-- BEGIN tab-pane -->
+													<div class="tab-pane fade" id="panel-tab-profile">
+														<h3><span class="text-primary">Bootstrap</span> Tabs</h3>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed enim arcu. Ut posuere in ligula quis ultricies. In in justo turpis. Donec ut dui at massa gravida interdum nec vitae justo. Quisque ullamcorper vehicula dictum. Nullam hendrerit interdum eleifend. Aenean luctus sed arcu laoreet scelerisque. Vivamus non ullamcorper mauris, id sagittis lorem. Proin tincidunt mauris et dolor mattis imperdiet. Sed facilisis mattis diam elementum adipiscing. Raw denim you probably haven't heard of them jean shorts Austin. </p>
+													</div>
+													<!-- END tab-pane -->
+												</div>
+												<!-- END tab-content -->
+											</div>
+										</div>
+									</li>
 									<li><a href="javascript:;">Earth Resource Mineral Occurrence</a></li>
 									<li><a href="javascript:;">Earth Resource Mining Activity</a></li>
 									<li><a href="javascript:;">Mineral Occurence View</a></li>
@@ -343,8 +376,8 @@
 				</ul>
 				<!-- END breadcrumb -->
 				<!-- BEGIN page-header -->
-				<h1 class="page-header">
-					Google Map <small>page header description goes here...</small>
+				<h1 class="page-header"> <img src="assets/img/AuScope-logo-220.jpg" class="navbar-logo"></img>
+	
 				</h1>
 				<!-- END page-header -->
                 <div class="btn-group map-btn pull-right">

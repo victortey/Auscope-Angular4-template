@@ -1,0 +1,19 @@
+/*
+Contain Auscope specific modification to the original template.
+
+*/
+.layer-panel{
+	left:-100px;
+	width:320px;
+}
+
+
+/*
+max-width: 768px(small screen)
+*/
+@media (max-width: 768px) {
+	.layer-panel{
+		left:inherit;
+		width:90%;
+	}
+}
