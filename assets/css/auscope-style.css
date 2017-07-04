@@ -16,4 +16,9 @@ max-width: 768px(small screen)
 		left:inherit;
 		width:90%;
 	}
+	
+	.layer-panel > .panel-heading li > a{
+		height:30px;
+	}
+	
 }
