@@ -7,9 +7,16 @@ Contain Auscope specific modification to the original template.
 	width:320px;
 }
 
+.float-sub-menu .layer-panel{
+		left:-53px;
+		width:315px;
+}
+
 .sub-menu .panel .panel-heading{
 	height:43px;
 }
+
+
 
 /*
 max-width: 768px(small screen)
