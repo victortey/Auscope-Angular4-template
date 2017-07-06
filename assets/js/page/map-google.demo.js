@@ -11,12 +11,37 @@ var handleRenderGoogleMap = function() {
 
 	function initialize() {
 		var mapOptions = {
-			zoom: 6,
-			center: new google.maps.LatLng(24.55, 271.55),
+			zoom: 8,
+			center: new google.maps.LatLng(-32.0397559,115.6813583),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			disableDefaultUI: true,
 		};
+
 		mapDefault = new google.maps.Map(document.getElementById('google-map-default'), mapOptions);
+		
+		var myLatLng = {lat: -32.0397559, lng: 115.6813583};
+		var myLatLng2 = {lat: -32.0397559, lng: 116.6813583};
+
+		var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: mapDefault,
+          title: 'Single result!'
+        });
+		
+		var marker2 = new google.maps.Marker({
+          position: myLatLng2,
+          map: mapDefault,
+          title: 'Multi result!'
+        });
+		
+		 marker.addListener('click', function() {
+			$('#large-modal').modal('show');
+        });
+		
+		 marker2.addListener('click', function() {
+			$('#large-modal2').modal('show');
+        });
+		
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
 

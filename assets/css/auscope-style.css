@@ -7,6 +7,9 @@ Contain Auscope specific modification to the original template.
 	width:320px;
 }
 
+.sub-menu .panel .panel-heading{
+	height:43px;
+}
 
 /*
 max-width: 768px(small screen)
@@ -19,6 +22,26 @@ max-width: 768px(small screen)
 	
 	.layer-panel > .panel-heading li > a{
 		height:30px;
+	}
+	
+	.desktop-only{
+		display: none!important
+	}
+	
+	.mobile-only{
+		display:block;
+	}
+	
+}
+
+@media (min-width: 768px) {
+		
+	.mobile-only{
+		display: none!important
+	}
+	
+	.desktop-only{
+		display:block;
 	}
 	
 }
