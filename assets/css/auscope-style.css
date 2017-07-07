@@ -23,8 +23,8 @@ max-width: 768px(small screen)
 */
 @media (max-width: 768px) {
 	.layer-panel{
-		left:inherit;
-		width:90%;
+		left:-60px;
+		width:100%;
 	}
 	
 	.layer-panel > .panel-heading li > a{
